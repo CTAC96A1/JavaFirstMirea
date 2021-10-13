@@ -7,7 +7,6 @@ public class Figure extends JFrame {
 
     public Figure()
     {
-        super("TwentyShapes");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(1920,1080);
         setVisible(true);

@@ -13,6 +13,7 @@ public class CommandStr extends JFrame
     private static String[] savedArgs;
     public CommandStr()
     {
+        super("tus");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(1920,1080);
         setVisible(true);
