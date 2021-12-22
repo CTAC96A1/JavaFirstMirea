@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ru.mirea.task7.Ex4</OriginalElement>
+  <nodes>
+    <node x="0.0" y="153.0">ru.mirea.task7.Ex4.ExecutorMove</node>
+    <node x="100.25" y="0.0">ru.mirea.task7.Ex4.Movable</node>
+    <node x="0.0" y="79.0">ru.mirea.task7.Ex4.MovableCircle</node>
+    <node x="165.0" y="79.0">ru.mirea.task7.Ex4.MovablePoint</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ru.mirea.task7.Ex4.MovablePoint" target="ru.mirea.task7.Ex4.Movable" relationship="REALIZATION">
+      <point x="0.0" y="-14.5" />
+      <point x="236.0" y="54.0" />
+      <point x="154.25" y="54.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="ru.mirea.task7.Ex4.MovableCircle" target="ru.mirea.task7.Ex4.Movable" relationship="REALIZATION">
+      <point x="0.0" y="-14.5" />
+      <point x="72.5" y="54.0" />
+      <point x="154.25" y="54.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="153.5" y="91.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
