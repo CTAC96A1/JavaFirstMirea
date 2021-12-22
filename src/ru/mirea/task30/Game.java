@@ -41,7 +41,7 @@ public class Game {
 
     @Override
     public String toString() {
-        return "Woman: " + "nameLevel=" + nameLevel + "; " +
+        return "Game: " + "nameLevel=" + nameLevel + "; " +
                 "level=" + level + "; " +
                 "difficult=" + difficult +
                 '.';

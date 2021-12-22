@@ -15,7 +15,7 @@ public class Client {
 
     public static void main(String[] args){
         Client client = new Client(new AbstractFactory());
-        client.Sit("Victorian");
+        client.Sit("Multifunctional");
         System.out.println("Текущий стул: "+client.getChair());
     }
 }

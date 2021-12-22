@@ -9,7 +9,7 @@ import java.util.Scanner;
 class Date_Build {
     long getMlsc(String date_str) {
         long mlsc = -1;
-        SimpleDateFormat a = new SimpleDateFormat("Год-Месяц-День часы:минуты");
+        SimpleDateFormat a = new SimpleDateFormat("yyyy-MM-dd HH:mm");
         try {
             Date date = a.parse(date_str);
             mlsc = date.getTime();
@@ -35,7 +35,7 @@ class T_Calendar extends Date_Build {
         Calendar calendar = Calendar.getInstance();
 
         try {
-            SimpleDateFormat a = new SimpleDateFormat("Год-Месяц-День часы:минуты");
+            SimpleDateFormat a = new SimpleDateFormat("yyyy-MM-dd HH:mm");
             calendar.setTime(a.parse(date_str));
         } catch (ParseException e) {
             e.printStackTrace();
@@ -68,7 +68,7 @@ class Main {
 
 public class Time {
     void task1() {
-        System.out.println("Введите дату в следующем формате: Год-Месяц-День часы:минуты");
+        System.out.println("Введите дату в следующем формате: Год-Месяц-День Ч:М");
         Scanner scanner = new Scanner(System.in).useDelimiter("\\n");;
         String dateString = scanner.next();
 
@@ -88,7 +88,7 @@ public class Time {
 
         System.out.println("Введите фамилию студента: ");
         lastName = scanner.next();
-        System.out.println("Введите дату получения задания: Год-Месяц-День часы:минуты");
+        System.out.println("Введите дату получения задания: Год-Месяц-День Ч:М");
         receiptDateStr = scanner.next();
 
         T_Calendar t_calendar = new T_Calendar();

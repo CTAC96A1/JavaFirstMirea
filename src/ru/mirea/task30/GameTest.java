@@ -18,7 +18,7 @@ public class GameTest {
                 "difficult=hard" +
                 '.');
         expected.add("Game: " + "nameLevel=Metroid" + "; " +
-                "level=13" + "; " +
+                "level=47" + "; " +
                 "difficult=easy" +
                 '.');
 
@@ -52,9 +52,9 @@ public class GameTest {
     @Test
     public void  testAlwaysNotPass(){
         Game w1 = new Game("Mario", 13 , "hard");
-        Game w2 = new Game("Metroid", 47, "easy");
+        Game w2 = new Game("Metroid", 47, "hard");
 
-        String expected = "green";
+        String expected = "hard";
         String actual = w2.getEyesColor();
 
         Assert.assertEquals(expected, actual);

@@ -26,14 +26,14 @@ public class Car {
     }
 
     public static void main(String[] args) {
-        Car mazda = new Car(new Type("Sedan", 200), "Mazda", 2019, 6000000);
-        mazda.data();
+        Car Vaz2106 = new Car(new Type("Sedan", 300), "Vaz", 1976, 35000);
+        Vaz2106.data();
 
-        Car mercedes = new Car(new Type("Hatchback", 180), "Mercedes", 2013, 5000000) {
+        Car tesla = new Car(new Type("electrcar", 250), "Model 3", 2022, 500000000) {
             public void data() { System.out.println("Автомобиль -> " + model + " " + type.type + " " + type.speed + " км/ч " + year + " " + price); }
         };
 
         System.out.println();
-        mercedes.data();
+        tesla.data();
     }
 }

@@ -13,12 +13,12 @@ public class Main {
 
         CurrencyInfo currencyInfo = new CurrencyInfo(quotes, minor, diplomacy);
 
-        FileOutputStream outputStream = new FileOutputStream("C:\\Users\\home\\Documents");
+        FileOutputStream outputStream = new FileOutputStream("C:/Users/home/IdeaProjects/JavaFirstMirea/src/ru/mirea/task29/Task29.ser");
         ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream);
         objectOutputStream.writeObject(currencyInfo);
         objectOutputStream.close();
 
-        FileInputStream fileInputStream = new FileInputStream("C:\\Users\\home\\Documents");
+        FileInputStream fileInputStream = new FileInputStream("C:/Users/home/IdeaProjects/JavaFirstMirea/src/ru/mirea/task29/Task29.ser");
         ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
         CurrencyInfo currencyInfo1 = (CurrencyInfo) objectInputStream.readObject();
         System.out.println(currencyInfo1);
